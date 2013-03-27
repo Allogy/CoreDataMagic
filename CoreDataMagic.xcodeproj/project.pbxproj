@@ -190,6 +190,7 @@
 		79CB3B0B17033DC700B178DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CDM;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Allogy Interactive";
 			};
