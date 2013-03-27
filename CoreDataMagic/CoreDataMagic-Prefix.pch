@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CoreDataMagic' target in the 'CoreDataMagic' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
