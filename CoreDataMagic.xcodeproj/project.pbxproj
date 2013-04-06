@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79979327170F59860038DEBA /* UIDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */; };
 		79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1617033DC700B178DB /* Foundation.framework */; };
 		79CB3B1C17033DC700B178DB /* CoreDataMagic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CB3B1B17033DC700B178DB /* CoreDataMagic.h */; };
 		79CB3B1E17033DC700B178DB /* CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B1D17033DC700B178DB /* CoreDataMagic.m */; };
@@ -16,6 +17,12 @@
 		79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1317033DC700B178DB /* libCoreDataMagic.a */; };
 		79CB3B3217033DC700B178DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B3017033DC700B178DB /* InfoPlist.strings */; };
 		79CB3B3517033DC700B178DB /* CoreDataMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B3417033DC700B178DB /* CoreDataMagicTests.m */; };
+		79CB3B411703404500B178DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B401703404500B178DB /* CoreData.framework */; };
+		79CB3B421703404E00B178DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B401703404500B178DB /* CoreData.framework */; };
+		79CB3B45170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B44170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m */; };
+		79CB3B47170341F100B178DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B46170341F100B178DB /* UIKit.framework */; };
+		79CB3B4A1703422400B178DB /* UIManagedDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */; };
+		79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79979325170F59860038DEBA /* UIDocument+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDocument+CoreDataMagic.h"; sourceTree = "<group>"; };
+		79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDocument+CoreDataMagic.m"; sourceTree = "<group>"; };
 		79CB3B1317033DC700B178DB /* libCoreDataMagic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreDataMagic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CB3B1617033DC700B178DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79CB3B1A17033DC700B178DB /* CoreDataMagic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataMagic-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +63,13 @@
 		79CB3B3117033DC700B178DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79CB3B3317033DC700B178DB /* CoreDataMagicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataMagicTests.h; sourceTree = "<group>"; };
 		79CB3B3417033DC700B178DB /* CoreDataMagicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMagicTests.m; sourceTree = "<group>"; };
+		79CB3B401703404500B178DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79CB3B43170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+CoreDataMagic.h"; sourceTree = "<group>"; };
+		79CB3B44170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+CoreDataMagic.m"; sourceTree = "<group>"; };
+		79CB3B46170341F100B178DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79CB3B481703422300B178DB /* UIManagedDocument+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIManagedDocument+CoreDataMagic.h"; sourceTree = "<group>"; };
+		79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIManagedDocument+CoreDataMagic.m"; sourceTree = "<group>"; };
+		79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoreDataMagic.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CB3B47170341F100B178DB /* UIKit.framework in Frameworks */,
+				79CB3B411703404500B178DB /* CoreData.framework in Frameworks */,
 				79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +91,7 @@
 				79CB3B2817033DC700B178DB /* UIKit.framework in Frameworks */,
 				79CB3B2917033DC700B178DB /* Foundation.framework in Frameworks */,
 				79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */,
+				79CB3B421703404E00B178DB /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +101,7 @@
 		79CB3B0A17033DC700B178DB = {
 			isa = PBXGroup;
 			children = (
+				79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */,
 				79CB3B1817033DC700B178DB /* CoreDataMagic */,
 				79CB3B2D17033DC700B178DB /* CoreDataMagicTests */,
 				79CB3B1517033DC700B178DB /* Frameworks */,
@@ -101,6 +121,8 @@
 		79CB3B1517033DC700B178DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79CB3B46170341F100B178DB /* UIKit.framework */,
+				79CB3B401703404500B178DB /* CoreData.framework */,
 				79CB3B1617033DC700B178DB /* Foundation.framework */,
 				79CB3B2517033DC700B178DB /* SenTestingKit.framework */,
 				79CB3B2717033DC700B178DB /* UIKit.framework */,
@@ -113,6 +135,12 @@
 			children = (
 				79CB3B1B17033DC700B178DB /* CoreDataMagic.h */,
 				79CB3B1D17033DC700B178DB /* CoreDataMagic.m */,
+				79CB3B43170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.h */,
+				79CB3B44170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m */,
+				79CB3B481703422300B178DB /* UIManagedDocument+CoreDataMagic.h */,
+				79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */,
+				79979325170F59860038DEBA /* UIDocument+CoreDataMagic.h */,
+				79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */,
 				79CB3B1917033DC700B178DB /* Supporting Files */,
 			);
 			path = CoreDataMagic;
@@ -218,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CB3B3217033DC700B178DB /* InfoPlist.strings in Resources */,
+				79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CB3B1E17033DC700B178DB /* CoreDataMagic.m in Sources */,
+				79CB3B45170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m in Sources */,
+				79CB3B4A1703422400B178DB /* UIManagedDocument+CoreDataMagic.m in Sources */,
+				79979327170F59860038DEBA /* UIDocument+CoreDataMagic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +436,7 @@
 				79CB3B3A17033DC700B178DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79CB3B3B17033DC700B178DB /* Build configuration list for PBXNativeTarget "CoreDataMagicTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +445,7 @@
 				79CB3B3D17033DC700B178DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
