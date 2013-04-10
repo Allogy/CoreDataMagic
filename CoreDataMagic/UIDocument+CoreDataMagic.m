@@ -19,6 +19,21 @@ static const char * const CoreDataMagicUIDocumentOpenCompletionHandlersKey = "Co
 
 @implementation UIDocument (CoreDataMagic)
 
++ (void)openDocuments:(NSArray *)documents andQueueCompletionHandler:(void (^)(BOOL))completionHandler
+{
+	__block BOOL cumulativeSuccess = YES;
+	NSMutableSet *documentsRemaining = [NSMutableSet setWithArray:documents];
+	[documents enumerateObjectsUsingBlock:^(UIDocument *document, NSUInteger index, BOOL *stop) {
+		[document openAndQueueCompletionHandler:^(BOOL success) {
+			cumulativeSuccess = cumulativeSuccess && success;
+			[documentsRemaining removeObject:document];
+			if (!documentsRemaining.count) {
+				completionHandler(cumulativeSuccess);
+			}
+		}];
+	}];
+}
+
 - (void)openAndQueueCompletionHandler:(void (^)(BOOL))completionHandler
 {
 	// Run on the main queue because we want to make sure we only modify self.openCompletionHandlers on that queue
