@@ -10,6 +10,11 @@
 #import <CoreData/CoreData.h>
 #import <UIKit/UIKit.h>
 
+#import "NSComparisonPredicate+CoreDataMagic.h"
+#import "NSManagedObjectContext+CoreDataMagic.h"
+#import "UIDocument+CoreDataMagic.h"
+#import "UIManagedDocument+CoreDataMagic.h"
+
 @interface CoreDataMagic : NSObject
 
 @end

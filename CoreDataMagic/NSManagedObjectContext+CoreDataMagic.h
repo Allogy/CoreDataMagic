@@ -37,4 +37,36 @@
  */
 - (void)faultedObjectsWithObjectIDs:(NSArray *)objectIDs completionHandler:(void (^)(NSArray *objects, NSError *error))completionHandler;
 
+/**
+ Convenience method for fetching a single object with a fetch request on the parent context's thread.
+ 
+ Calls executeFetchRequest:onParentContextWithCompletionHandler:
+ */
+- (void)fetchObjectWithRequest:(NSFetchRequest *)request onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler;
+
+/**
+ Convenience method for fetching a single object with an entity name and predicate on the parent context's thread.
+ */
+- (void)fetchObjectWithEntityName:(NSString *)entityName andPredicate:(NSPredicate *)predicate onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler;
+
+/**
+ Convenience method for fetching a single object with an entity name, keyPath, and value on the parent context's thread.
+ */
+- (void)fetchObjectWithEntityName:(NSString *)entityName keyPath:(NSString *)keyPath value:(id)value onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler;
+
+/**
+ Convenience method for fetching a single object with a fetch request.
+ */
+- (id)fetchObjectWithRequest:(NSFetchRequest *)fetchRequest error:(NSError **)error;
+
+/**
+ Convenience method for fetching a single object with an entity name and predicate.
+ */
+- (id)fetchObjectWithEntityName:(NSString *)entityName andPredicate:(NSPredicate *)predicate error:(NSError **)error;
+
+/**
+ Convenience method for fetching a single object with an entity name, keyPath, and value.
+ */
+- (id)fetchObjectWithEntityName:(NSString *)entityName keyPath:(NSString *)keyPath value:(id)value error:(NSError **)error;
+
 @end

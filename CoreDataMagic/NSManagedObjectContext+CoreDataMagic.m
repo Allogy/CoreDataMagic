@@ -7,6 +7,7 @@
 //
 
 #import "NSManagedObjectContext+CoreDataMagic.h"
+#import "NSComparisonPredicate+CoreDataMagic.h"
 
 @implementation NSManagedObjectContext (CoreDataMagic)
 
@@ -78,6 +79,51 @@
 			completionHandler(faultedObjects, error);
 		}];
 	});
+}
+
+- (void)fetchObjectWithRequest:(NSFetchRequest *)request onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler
+{
+	request.fetchLimit = 1;
+
+	[self executeFetchRequest:request onParentContextWithCompletionHandler:^(NSArray *results, NSError *error) {
+		completionHandler([results lastObject], error);
+	}];
+}
+
+- (void)fetchObjectWithEntityName:(NSString *)entityName andPredicate:(NSPredicate *)predicate onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler
+{
+	NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
+	fetchRequest.predicate = predicate;
+
+	[self fetchObjectWithRequest:fetchRequest onParentContextWithCompletionHandler:completionHandler];
+}
+
+- (void)fetchObjectWithEntityName:(NSString *)entityName keyPath:(NSString *)keyPath value:(id)value onParentContextWithCompletionHandler:(void (^)(id object, NSError *error))completionHandler
+{
+	[self fetchObjectWithEntityName:entityName andPredicate:[NSComparisonPredicate predicateWithKeyPath:keyPath value:value] onParentContextWithCompletionHandler:completionHandler];
+}
+
+- (id)fetchObjectWithRequest:(NSFetchRequest *)fetchRequest error:(NSError **)error
+{
+	fetchRequest.fetchLimit = 1;
+
+	NSArray *results = [self executeFetchRequest:fetchRequest error:error];
+	id object = [results lastObject];
+
+	return object;
+}
+
+- (id)fetchObjectWithEntityName:(NSString *)entityName andPredicate:(NSPredicate *)predicate error:(NSError **)error
+{
+	NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
+	fetchRequest.predicate = predicate;
+
+	return [self fetchObjectWithRequest:fetchRequest error:error];
+}
+
+- (id)fetchObjectWithEntityName:(NSString *)entityName keyPath:(NSString *)keyPath value:(id)value error:(NSError **)error
+{
+	return [self fetchObjectWithEntityName:entityName andPredicate:[NSComparisonPredicate predicateWithKeyPath:keyPath value:value] error:error];
 }
 
 @end
