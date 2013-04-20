@@ -68,4 +68,43 @@ static const char * const CoreDataMagicUIDocumentOpenCompletionHandlersKey = "Co
 	objc_setAssociatedObject(self, &CoreDataMagicUIDocumentOpenCompletionHandlersKey, openCompletionHandlers, OBJC_ASSOCIATION_RETAIN);
 }
 
+- (void)closeAndAlwaysCallCompletionHandler:(void (^)(BOOL))completionHandler
+{
+	if (self.documentState & UIDocumentStateClosed) {
+		if (completionHandler)
+			completionHandler(YES);
+	}
+	else {
+		[self closeWithCompletionHandler:completionHandler];
+	}
+}
+
+- (void)deleteWithCompletionHandler:(void (^)(BOOL))completionHandler
+{
+	[self closeAndAlwaysCallCompletionHandler:^(BOOL success) {
+		if (success) {
+			// Copied from http://developer.apple.com/library/ios/#documentation/DataManagement/Conceptual/DocumentBasedAppPGiOS/ManageDocumentLifeCycle/ManageDocumentLifeCycle.html#//apple_ref/doc/uid/TP40011149-CH4-SW4
+			// Also see http://stackoverflow.com/a/15026829/456366
+			dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+				NSFileCoordinator* fileCoordinator = [[NSFileCoordinator alloc] initWithFilePresenter:nil];
+				[fileCoordinator coordinateWritingItemAtURL:self.fileURL options:NSFileCoordinatorWritingForDeleting error:nil byAccessor:^(NSURL* writingURL) {
+					NSError *error = nil;
+					NSFileManager* fileManager = [[NSFileManager alloc] init];
+					if ([fileManager fileExistsAtPath:writingURL.path]) {
+						[fileManager removeItemAtURL:writingURL error:&error];
+
+						BOOL success = error ? NO : YES;
+						if (completionHandler)
+							completionHandler(success);
+					}
+					else if (completionHandler)
+						completionHandler(YES);
+				}];
+			});
+		}
+		else if (completionHandler)
+			completionHandler(success);
+	}];
+}
+
 @end

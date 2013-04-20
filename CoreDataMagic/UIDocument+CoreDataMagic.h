@@ -22,4 +22,16 @@
  */
 - (void)openAndQueueCompletionHandler:(void (^)(BOOL))completionHandler;
 
+/**
+ Closes the document if it isn't already close and calls the completion handler whether it had been closed or not.
+ 
+ - closeWithCompletionHandler: only calls the completionHandler if the document wasn't already closed, so if you are relying on the completion handler you might miss it. For cases like that, use this method instead.
+ */
+- (void)closeAndAlwaysCallCompletionHandler:(void (^)(BOOL))completionHandler;
+
+/**
+ Deletes the document
+ */
+- (void)deleteWithCompletionHandler:(void (^)(BOOL))completionHandler;
+
 @end
