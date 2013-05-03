@@ -15,6 +15,8 @@
 {
 	NSManagedObjectContext *parentContext = self.parentContext;
 
+	NSParameterAssert(parentContext);
+
 	BOOL returnObjectsAsFaults = request.returnsObjectsAsFaults;
 
 	[parentContext performBlock:^() {
