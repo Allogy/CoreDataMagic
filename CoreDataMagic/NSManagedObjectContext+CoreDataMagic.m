@@ -21,8 +21,15 @@
 
 	[parentContext performBlock:^() {
 		NSError *error = nil;
+
+		// In the background, we only need the Object IDs
+		NSFetchRequestResultType originalResultType = request.resultType;
 		request.resultType = NSManagedObjectIDResultType;
+
 		NSArray *objectIDs = [parentContext executeFetchRequest:request error:&error];
+
+		// Restore the original result type, in case the calling code still wants to use it
+		request.resultType = originalResultType;
 
 		[self performBlock:^() {
 			if (returnObjectsAsFaults) {
