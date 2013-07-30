@@ -11,6 +11,31 @@
 
 @implementation NSManagedObjectContext (CoreDataMagic)
 
+- (void)faultObject:(NSManagedObject *)object onParentContextWithCompletionHandler:(void (^)(NSError *error))completionHandler
+{
+	NSManagedObjectContext *parentContext = self.parentContext;
+	NSManagedObjectID *objectID = object.objectID;
+
+	// If this isn't a fault, then we don't need to fault it in
+	// Also, if there isn't a parent context, we can't fault in the background anyway, so just call the completion handler and let the object be faulted in regularly
+	if (!object.isFault || !parentContext) {
+		// Perform the completion handler in the correct block (the 'AndWait' ensures that if we are already on the right thread, it will run now instead of getting queued).
+		[self performBlockAndWait:^() {
+			completionHandler(nil);
+		}];
+		return;
+	}
+
+	[parentContext performBlock:^() {
+		NSError *error = nil;
+		NSManagedObject *objectInParentContext = [self existingObjectWithID:objectID error:&error];
+
+		[self performBlock:^() {
+			completionHandler(error);
+		}];
+	}];
+}
+
 - (void)executeFetchRequest:(NSFetchRequest *)request onParentContextWithCompletionHandler:(void (^)(NSArray *, NSError *))completionHandler
 {
 	NSManagedObjectContext *parentContext = self.parentContext;

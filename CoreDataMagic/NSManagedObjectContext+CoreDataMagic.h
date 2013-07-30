@@ -11,6 +11,15 @@
 @interface NSManagedObjectContext (CoreDataMagic)
 
 /**
+ If the object is a fault, calls the parent context to fault it in. If the object is not a fault, the completion handler is called immediately.
+ 
+ This is helpful when using a persistent store that takes a while to fault in the data. For instance, if the persistent store must retrieve the data from a server, using this method causes the parent thread to be blocked instead of the current thread. Then once the parent thread has loaded the data, it should be cached by the persistent store so that faulting in the object on the current thread is fast.
+ 
+ If no parent context exists, the completion handler is called immediately without faulting in the object.
+ */
+- (void)faultObject:(NSManagedObject *)object onParentContextWithCompletionHandler:(void (^)(NSError *error))completionHandler;
+
+/**
  Executes a fetch request on the parent context, copies the resulting objects to the target context, then passes the results to the completion handler
  
  This is typically used to run a fetch request in the background, when the target context is on the main thread, but the parent context is not.
