@@ -20,4 +20,6 @@ Pod::Spec.new do |s|
   s.framework  = 'Foundation', 'UIKit', 'CoreData'
   s.requires_arc = true
 
+  s.dependency 'Omniscience'
+
 end
