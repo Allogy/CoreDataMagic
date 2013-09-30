@@ -1,0 +1,9 @@
+//
+//  Config.xcconfig
+//  CoreDataMagic
+//
+//  Created by Richard Venable on 9/30/13.
+//  Copyright (c) 2013 Allogy Interactive. All rights reserved.
+//
+
+USER_HEADER_SEARCH_PATHS = ${SRCROOT}/../Omniscience/Omniscience/**

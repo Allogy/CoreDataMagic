@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8B6479C0-F763-4467-A977-4CCEAB3E9565</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreDataMagic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2209691B-0B13-4CAE-9366-996224484F0E</key>
+		<string>ssh://github.com/Allogy/CoreDataMagic.git</string>
+		<key>33313C7E-E535-4232-A0A3-93235E02D302</key>
+		<string>ssh://github.com/Allogy/Omniscience.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreDataMagic.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2209691B-0B13-4CAE-9366-996224484F0E</key>
+		<string>..</string>
+		<key>33313C7E-E535-4232-A0A3-93235E02D302</key>
+		<string>../../Omniscience</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/Allogy/CoreDataMagic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2209691B-0B13-4CAE-9366-996224484F0E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2209691B-0B13-4CAE-9366-996224484F0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreDataMagic</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>33313C7E-E535-4232-A0A3-93235E02D302</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Omniscience</string>
+		</dict>
+	</array>
+</dict>
+</plist>

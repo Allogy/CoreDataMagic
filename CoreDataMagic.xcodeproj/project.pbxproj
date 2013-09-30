@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A7B70D38DA4403FBB2F5C6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C464320D655A4DF7B2DEF43C /* libPods.a */; };
 		79979327170F59860038DEBA /* UIDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */; };
 		7997932A171064750038DEBA /* NSComparisonPredicate+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79979329171064740038DEBA /* NSComparisonPredicate+CoreDataMagic.m */; };
 		79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1617033DC700B178DB /* Foundation.framework */; };
@@ -26,6 +25,7 @@
 		79CB3B4A1703422400B178DB /* UIManagedDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */; };
 		79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */; };
 		79D76447172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D76446172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m */; };
+		79FE75F517FA2CA2007DD7F6 /* libOmniscience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		580475E0BB484891A2629EE3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		79979325170F59860038DEBA /* UIDocument+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDocument+CoreDataMagic.h"; sourceTree = "<group>"; };
 		79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDocument+CoreDataMagic.m"; sourceTree = "<group>"; };
 		79979328171064730038DEBA /* NSComparisonPredicate+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSComparisonPredicate+CoreDataMagic.h"; sourceTree = "<group>"; };
@@ -78,7 +77,8 @@
 		79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoreDataMagic.podspec; sourceTree = "<group>"; };
 		79D76445172B41B2005C1797 /* NSManagedObject+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreDataMagic.h"; sourceTree = "<group>"; };
 		79D76446172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreDataMagic.m"; sourceTree = "<group>"; };
-		C464320D655A4DF7B2DEF43C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FE75F317FA2902007DD7F6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOmniscience.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libOmniscience.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FE75F517FA2CA2007DD7F6 /* libOmniscience.a in Frameworks */,
 				79CB3B47170341F100B178DB /* UIKit.framework in Frameworks */,
 				79CB3B411703404500B178DB /* CoreData.framework in Frameworks */,
 				79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */,
-				4A7B70D38DA4403FBB2F5C6F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +111,12 @@
 		79CB3B0A17033DC700B178DB = {
 			isa = PBXGroup;
 			children = (
+				79FE75F317FA2902007DD7F6 /* Config.xcconfig */,
 				79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */,
 				79CB3B1817033DC700B178DB /* CoreDataMagic */,
 				79CB3B2D17033DC700B178DB /* CoreDataMagicTests */,
 				79CB3B1517033DC700B178DB /* Frameworks */,
 				79CB3B1417033DC700B178DB /* Products */,
-				580475E0BB484891A2629EE3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,12 +132,12 @@
 		79CB3B1517033DC700B178DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */,
 				79CB3B46170341F100B178DB /* UIKit.framework */,
 				79CB3B401703404500B178DB /* CoreData.framework */,
 				79CB3B1617033DC700B178DB /* Foundation.framework */,
 				79CB3B2517033DC700B178DB /* SenTestingKit.framework */,
 				79CB3B2717033DC700B178DB /* UIKit.framework */,
-				C464320D655A4DF7B2DEF43C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,11 +196,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79CB3B3817033DC700B178DB /* Build configuration list for PBXNativeTarget "CoreDataMagic" */;
 			buildPhases = (
-				A77C7418DA394098A3BFB494 /* Check Pods Manifest.lock */,
 				79CB3B0F17033DC700B178DB /* Sources */,
 				79CB3B1017033DC700B178DB /* Frameworks */,
 				79CB3B1117033DC700B178DB /* CopyFiles */,
-				6D3C0BE3E1FA441D9181882B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,21 +269,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D3C0BE3E1FA441D9181882B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		79CB3B2217033DC700B178DB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,21 +281,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		A77C7418DA394098A3BFB494 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -362,6 +330,7 @@
 /* Begin XCBuildConfiguration section */
 		79CB3B3617033DC700B178DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FE75F317FA2902007DD7F6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -392,6 +361,7 @@
 		};
 		79CB3B3717033DC700B178DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FE75F317FA2902007DD7F6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -415,11 +385,14 @@
 		};
 		79CB3B3917033DC700B178DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 580475E0BB484891A2629EE3 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/CoreDataMagic.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataMagic/CoreDataMagic-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -428,11 +401,14 @@
 		};
 		79CB3B3A17033DC700B178DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 580475E0BB484891A2629EE3 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/CoreDataMagic.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataMagic/CoreDataMagic-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
