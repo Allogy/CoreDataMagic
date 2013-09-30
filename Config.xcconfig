@@ -6,4 +6,7 @@
 //  Copyright (c) 2013 Allogy Interactive. All rights reserved.
 //
 
+// See https://developer.apple.com/library/mac/qa/qa1490/_index.html for info on -Objc flag
+OTHER_LDFLAGS = -ObjC
+
 USER_HEADER_SEARCH_PATHS = ${SRCROOT}/../Omniscience/Omniscience/**

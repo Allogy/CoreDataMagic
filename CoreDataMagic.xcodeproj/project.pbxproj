@@ -25,7 +25,6 @@
 		79CB3B4A1703422400B178DB /* UIManagedDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */; };
 		79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */; };
 		79D76447172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D76446172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m */; };
-		79FE75F517FA2CA2007DD7F6 /* libOmniscience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +77,6 @@
 		79D76445172B41B2005C1797 /* NSManagedObject+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreDataMagic.h"; sourceTree = "<group>"; };
 		79D76446172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreDataMagic.m"; sourceTree = "<group>"; };
 		79FE75F317FA2902007DD7F6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOmniscience.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libOmniscience.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79FE75F517FA2CA2007DD7F6 /* libOmniscience.a in Frameworks */,
 				79CB3B47170341F100B178DB /* UIKit.framework in Frameworks */,
 				79CB3B411703404500B178DB /* CoreData.framework in Frameworks */,
 				79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */,
@@ -132,7 +129,6 @@
 		79CB3B1517033DC700B178DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79FE75F417FA2CA2007DD7F6 /* libOmniscience.a */,
 				79CB3B46170341F100B178DB /* UIKit.framework */,
 				79CB3B401703404500B178DB /* CoreData.framework */,
 				79CB3B1617033DC700B178DB /* Foundation.framework */,
