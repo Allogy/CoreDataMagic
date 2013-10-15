@@ -10,3 +10,6 @@
 OTHER_LDFLAGS = -ObjC
 
 USER_HEADER_SEARCH_PATHS = ${SRCROOT}/../Omniscience/Omniscience/**
+
+// Skip install to prevent archiving this as a separate product in an app archive. See http://stackoverflow.com/a/5206643/456366
+SKIP_INSTALL = YES
