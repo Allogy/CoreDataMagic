@@ -9,7 +9,7 @@
 // See https://developer.apple.com/library/mac/qa/qa1490/_index.html for info on -Objc flag
 OTHER_LDFLAGS = -ObjC
 
-USER_HEADER_SEARCH_PATHS = ${SRCROOT}/../Omniscience/Omniscience/**
+USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../Omniscience/Omniscience/**"
 
 // Skip install to prevent archiving this as a separate product in an app archive. See http://stackoverflow.com/a/5206643/456366
 SKIP_INSTALL = YES

@@ -13,7 +13,6 @@
 		79CB3B1C17033DC700B178DB /* CoreDataMagic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CB3B1B17033DC700B178DB /* CoreDataMagic.h */; };
 		79CB3B1E17033DC700B178DB /* CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B1D17033DC700B178DB /* CoreDataMagic.m */; };
 		79CB3B2617033DC700B178DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B2517033DC700B178DB /* SenTestingKit.framework */; };
-		79CB3B2817033DC700B178DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B2717033DC700B178DB /* UIKit.framework */; };
 		79CB3B2917033DC700B178DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1617033DC700B178DB /* Foundation.framework */; };
 		79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1317033DC700B178DB /* libCoreDataMagic.a */; };
 		79CB3B3217033DC700B178DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B3017033DC700B178DB /* InfoPlist.strings */; };
@@ -51,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79219CCA18940B66008A79B3 /* libOmniscience.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOmniscience.a; path = "../../../../Library/Developer/Xcode/DerivedData/Capillary-bkmtebennlvvbuaqjopogcdnpawu/Build/Products/Debug-iphoneos/libOmniscience.a"; sourceTree = "<group>"; };
 		79979325170F59860038DEBA /* UIDocument+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDocument+CoreDataMagic.h"; sourceTree = "<group>"; };
 		79979326170F59860038DEBA /* UIDocument+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDocument+CoreDataMagic.m"; sourceTree = "<group>"; };
 		79979328171064730038DEBA /* NSComparisonPredicate+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSComparisonPredicate+CoreDataMagic.h"; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 		79CB3B1D17033DC700B178DB /* CoreDataMagic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMagic.m; sourceTree = "<group>"; };
 		79CB3B2417033DC700B178DB /* CoreDataMagicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMagicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CB3B2517033DC700B178DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		79CB3B2717033DC700B178DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		79CB3B2F17033DC700B178DB /* CoreDataMagicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataMagicTests-Info.plist"; sourceTree = "<group>"; };
 		79CB3B3117033DC700B178DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79CB3B3317033DC700B178DB /* CoreDataMagicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataMagicTests.h; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CB3B2617033DC700B178DB /* SenTestingKit.framework in Frameworks */,
-				79CB3B2817033DC700B178DB /* UIKit.framework in Frameworks */,
 				79CB3B2917033DC700B178DB /* Foundation.framework in Frameworks */,
 				79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */,
 				79CB3B421703404E00B178DB /* CoreData.framework in Frameworks */,
@@ -129,11 +127,11 @@
 		79CB3B1517033DC700B178DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79219CCA18940B66008A79B3 /* libOmniscience.a */,
 				79CB3B46170341F100B178DB /* UIKit.framework */,
 				79CB3B401703404500B178DB /* CoreData.framework */,
 				79CB3B1617033DC700B178DB /* Foundation.framework */,
 				79CB3B2517033DC700B178DB /* SenTestingKit.framework */,
-				79CB3B2717033DC700B178DB /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,6 +386,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Capillary-bkmtebennlvvbuaqjopogcdnpawu/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +403,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Capillary-bkmtebennlvvbuaqjopogcdnpawu/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
