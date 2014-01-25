@@ -28,7 +28,9 @@
 
 	[parentContext performBlock:^() {
 		NSError *error = nil;
-		NSManagedObject *objectInParentContext = [self existingObjectWithID:objectID error:&error];
+
+		// Note: the return value is unused, because we don't need it. We just need the side effect that the object has been faulted in.
+		[self existingObjectWithID:objectID error:&error];
 
 		[self performBlock:^() {
 			completionHandler(error);
