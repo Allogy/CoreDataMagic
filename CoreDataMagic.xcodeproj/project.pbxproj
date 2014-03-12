@@ -12,29 +12,12 @@
 		79CB3B1717033DC700B178DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1617033DC700B178DB /* Foundation.framework */; };
 		79CB3B1C17033DC700B178DB /* CoreDataMagic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CB3B1B17033DC700B178DB /* CoreDataMagic.h */; };
 		79CB3B1E17033DC700B178DB /* CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B1D17033DC700B178DB /* CoreDataMagic.m */; };
-		79CB3B2617033DC700B178DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B2517033DC700B178DB /* SenTestingKit.framework */; };
-		79CB3B2917033DC700B178DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1617033DC700B178DB /* Foundation.framework */; };
-		79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B1317033DC700B178DB /* libCoreDataMagic.a */; };
-		79CB3B3217033DC700B178DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B3017033DC700B178DB /* InfoPlist.strings */; };
-		79CB3B3517033DC700B178DB /* CoreDataMagicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B3417033DC700B178DB /* CoreDataMagicTests.m */; };
 		79CB3B411703404500B178DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B401703404500B178DB /* CoreData.framework */; };
-		79CB3B421703404E00B178DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B401703404500B178DB /* CoreData.framework */; };
 		79CB3B45170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B44170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m */; };
 		79CB3B47170341F100B178DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CB3B46170341F100B178DB /* UIKit.framework */; };
 		79CB3B4A1703422400B178DB /* UIManagedDocument+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CB3B491703422300B178DB /* UIManagedDocument+CoreDataMagic.m */; };
-		79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */; };
 		79D76447172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D76446172B41B2005C1797 /* NSManagedObject+CoreDataMagic.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		79CB3B2A17033DC700B178DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79CB3B0B17033DC700B178DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79CB3B1217033DC700B178DB;
-			remoteInfo = CoreDataMagic;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		79CB3B1117033DC700B178DB /* CopyFiles */ = {
@@ -60,12 +43,7 @@
 		79CB3B1A17033DC700B178DB /* CoreDataMagic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataMagic-Prefix.pch"; sourceTree = "<group>"; };
 		79CB3B1B17033DC700B178DB /* CoreDataMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataMagic.h; sourceTree = "<group>"; };
 		79CB3B1D17033DC700B178DB /* CoreDataMagic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMagic.m; sourceTree = "<group>"; };
-		79CB3B2417033DC700B178DB /* CoreDataMagicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMagicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CB3B2517033DC700B178DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		79CB3B2F17033DC700B178DB /* CoreDataMagicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataMagicTests-Info.plist"; sourceTree = "<group>"; };
-		79CB3B3117033DC700B178DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79CB3B3317033DC700B178DB /* CoreDataMagicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataMagicTests.h; sourceTree = "<group>"; };
-		79CB3B3417033DC700B178DB /* CoreDataMagicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMagicTests.m; sourceTree = "<group>"; };
 		79CB3B401703404500B178DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		79CB3B43170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+CoreDataMagic.h"; sourceTree = "<group>"; };
 		79CB3B44170340DC00B178DB /* NSManagedObjectContext+CoreDataMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+CoreDataMagic.m"; sourceTree = "<group>"; };
@@ -89,17 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79CB3B2017033DC700B178DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79CB3B2617033DC700B178DB /* SenTestingKit.framework in Frameworks */,
-				79CB3B2917033DC700B178DB /* Foundation.framework in Frameworks */,
-				79CB3B2C17033DC700B178DB /* libCoreDataMagic.a in Frameworks */,
-				79CB3B421703404E00B178DB /* CoreData.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,7 +76,6 @@
 				79FE75F317FA2902007DD7F6 /* Config.xcconfig */,
 				79CB3B4B170351A300B178DB /* CoreDataMagic.podspec */,
 				79CB3B1817033DC700B178DB /* CoreDataMagic */,
-				79CB3B2D17033DC700B178DB /* CoreDataMagicTests */,
 				79CB3B1517033DC700B178DB /* Frameworks */,
 				79CB3B1417033DC700B178DB /* Products */,
 			);
@@ -119,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				79CB3B1317033DC700B178DB /* libCoreDataMagic.a */,
-				79CB3B2417033DC700B178DB /* CoreDataMagicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,25 +129,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79CB3B2D17033DC700B178DB /* CoreDataMagicTests */ = {
-			isa = PBXGroup;
-			children = (
-				79CB3B3317033DC700B178DB /* CoreDataMagicTests.h */,
-				79CB3B3417033DC700B178DB /* CoreDataMagicTests.m */,
-				79CB3B2E17033DC700B178DB /* Supporting Files */,
-			);
-			path = CoreDataMagicTests;
-			sourceTree = "<group>";
-		};
-		79CB3B2E17033DC700B178DB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				79CB3B2F17033DC700B178DB /* CoreDataMagicTests-Info.plist */,
-				79CB3B3017033DC700B178DB /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,25 +149,6 @@
 			productReference = 79CB3B1317033DC700B178DB /* libCoreDataMagic.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		79CB3B2317033DC700B178DB /* CoreDataMagicTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79CB3B3B17033DC700B178DB /* Build configuration list for PBXNativeTarget "CoreDataMagicTests" */;
-			buildPhases = (
-				79CB3B1F17033DC700B178DB /* Sources */,
-				79CB3B2017033DC700B178DB /* Frameworks */,
-				79CB3B2117033DC700B178DB /* Resources */,
-				79CB3B2217033DC700B178DB /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79CB3B2B17033DC700B178DB /* PBXTargetDependency */,
-			);
-			name = CoreDataMagicTests;
-			productName = CoreDataMagicTests;
-			productReference = 79CB3B2417033DC700B178DB /* CoreDataMagicTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,6 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CDM;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Allogy Interactive";
 			};
@@ -245,38 +173,9 @@
 			projectRoot = "";
 			targets = (
 				79CB3B1217033DC700B178DB /* CoreDataMagic */,
-				79CB3B2317033DC700B178DB /* CoreDataMagicTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		79CB3B2117033DC700B178DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79CB3B3217033DC700B178DB /* InfoPlist.strings in Resources */,
-				79CB3B4C170351A300B178DB /* CoreDataMagic.podspec in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		79CB3B2217033DC700B178DB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79CB3B0F17033DC700B178DB /* Sources */ = {
@@ -292,34 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79CB3B1F17033DC700B178DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79CB3B3517033DC700B178DB /* CoreDataMagicTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		79CB3B2B17033DC700B178DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79CB3B1217033DC700B178DB /* CoreDataMagic */;
-			targetProxy = 79CB3B2A17033DC700B178DB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		79CB3B3017033DC700B178DB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79CB3B3117033DC700B178DB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		79CB3B3617033DC700B178DB /* Debug */ = {
@@ -411,36 +283,6 @@
 			};
 			name = Release;
 		};
-		79CB3B3C17033DC700B178DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreDataMagic/CoreDataMagic-Prefix.pch";
-				INFOPLIST_FILE = "CoreDataMagicTests/CoreDataMagicTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		79CB3B3D17033DC700B178DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreDataMagic/CoreDataMagic-Prefix.pch";
-				INFOPLIST_FILE = "CoreDataMagicTests/CoreDataMagicTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,15 +300,6 @@
 			buildConfigurations = (
 				79CB3B3917033DC700B178DB /* Debug */,
 				79CB3B3A17033DC700B178DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79CB3B3B17033DC700B178DB /* Build configuration list for PBXNativeTarget "CoreDataMagicTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79CB3B3C17033DC700B178DB /* Debug */,
-				79CB3B3D17033DC700B178DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
